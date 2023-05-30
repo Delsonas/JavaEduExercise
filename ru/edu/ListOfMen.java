@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package ru.edu;
+
 import java.util.List;
 
 public class ListOfMen {

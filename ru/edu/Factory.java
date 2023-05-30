@@ -1,9 +1,13 @@
-import java.util.Random;
+package ru.edu;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Factory {
     public Document crtDoc(TypeOfDoc type) {
         Document doc = null;
     //todo остальные сеттеры можно сделать тоже с "рандомным" заполнением
+
         RandomGenerator generator = new RandomGenerator();
 
         switch (type) {

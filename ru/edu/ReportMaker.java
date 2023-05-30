@@ -1,7 +1,11 @@
-import javax.print.Doc;
+package ru.edu;
+
+import org.springframework.stereotype.Component;
+
 import java.util.*;
 import java.lang.System;
 
+@Component
 public class ReportMaker {
     public Map<String, List<Document>> sorting(List<Document> listOfDocs) {
         Collections.sort(listOfDocs);

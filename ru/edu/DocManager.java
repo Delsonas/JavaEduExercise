@@ -1,13 +1,19 @@
-import java.util.*;
+package ru.edu;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
+@Component
 public class DocManager {
 
     public List<Document> listOfDocs = new ArrayList<>();
-    private final Factory docCreator = new Factory();
-    StorageOfRegNum regNum = new StorageOfRegNum();
+    @Autowired
+    private Factory docCreator;
+    @Autowired
+    StorageOfRegNum regNum;
 
     public List<Document> createDocs(int count) {
         int a;

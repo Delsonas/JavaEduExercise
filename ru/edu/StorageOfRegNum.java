@@ -1,6 +1,11 @@
+package ru.edu;
+
+import org.springframework.stereotype.Component;
+
 import java.util.HashSet;
 import java.util.Set;
 
+@Component
 public class StorageOfRegNum {
     Set<Integer> regNum = new HashSet<>();
 

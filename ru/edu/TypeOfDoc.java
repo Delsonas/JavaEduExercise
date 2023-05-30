@@ -1,3 +1,5 @@
+package ru.edu;
+
 import java.util.Random;
 
 public enum TypeOfDoc {

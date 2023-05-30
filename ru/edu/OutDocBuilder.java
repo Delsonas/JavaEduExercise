@@ -1,3 +1,5 @@
+package ru.edu;
+
 public class OutDocBuilder extends DocBuilder {
     public String adrOfOut;
     public String wayOfOut;

@@ -1,3 +1,5 @@
+package ru.edu;
+
 import java.time.LocalDate;
 
 public abstract class Document implements Comparable<Document> {

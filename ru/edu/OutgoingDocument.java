@@ -1,3 +1,5 @@
+package ru.edu;
+
 public class OutgoingDocument extends Document {
     private String adrOfOut;
     private String wayOfOut;
