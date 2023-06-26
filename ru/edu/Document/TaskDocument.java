@@ -1,4 +1,4 @@
-package ru.edu;
+package ru.edu.Document;
 
 import java.time.LocalDate;
 

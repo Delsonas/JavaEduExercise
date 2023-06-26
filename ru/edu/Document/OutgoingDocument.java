@@ -1,4 +1,4 @@
-package ru.edu;
+package ru.edu.Document;
 
 public class OutgoingDocument extends Document {
     private String adrOfOut;

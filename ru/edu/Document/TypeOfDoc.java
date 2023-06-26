@@ -1,11 +1,11 @@
-package ru.edu;
+package ru.edu.Document;
 
 import java.util.Random;
 
 public enum TypeOfDoc {
-    TASKDOCUMENT,
-    INCOMINGDOCUMENT,
-    OUTGOINGDOCUMENT;
+    TASK_DOCUMENT,
+    INCOMING_DOCUMENT,
+    OUTGOING_DOCUMENT;
 
     private static final Random rnd = new Random();
 

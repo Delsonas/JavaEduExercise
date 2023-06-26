@@ -1,4 +1,7 @@
-package ru.edu;
+package ru.edu.Builder;
+
+import ru.edu.Document.Document;
+import ru.edu.Document.TaskDocument;
 
 import java.time.LocalDate;
 
@@ -8,8 +11,6 @@ public class TaskDocBuilder extends DocBuilder {
     public String respOfTask;
     public String signOfTask;
     public String ctrlOfTask;
-
-    Document doc = new TaskDocument();
 
     public TaskDocBuilder setDateOfTask(LocalDate dateOfTask) {
         this.dateOfTask = dateOfTask;
@@ -38,6 +39,7 @@ public class TaskDocBuilder extends DocBuilder {
 
     @Override
     public Document build() {
+        Document doc = new TaskDocument();
         doc.setIdOfDoc(idOfDoc);
         doc.setNameOfDoc(nameOfDoc);
         doc.setTextOfDoc(textOfDoc);

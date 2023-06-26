@@ -1,5 +1,6 @@
-package ru.edu;
+package ru.edu.Builder;
 
+import ru.edu.Document.Document;
 import java.time.LocalDate;
 
 public abstract class DocBuilder {
@@ -9,7 +10,6 @@ public abstract class DocBuilder {
     public int numOfDoc;
     public LocalDate dateOfDoc;
     public String authorOfDoc;
-
 
     public int getNumOfDoc() {
 
@@ -53,6 +53,7 @@ public abstract class DocBuilder {
     }
 
     public abstract Document build();
+
     //todo заполняются только сеттеры документа, отдельные сеттеры разных типов документов пустые, можно потом их тоже заполнить
 
 }

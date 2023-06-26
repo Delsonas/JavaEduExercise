@@ -1,4 +1,4 @@
-package ru.edu;
+package ru.edu.Document;
 
 import java.time.LocalDate;
 
@@ -21,6 +21,9 @@ public abstract class Document implements Comparable<Document> {
                 + ", автор = " + authorOfDoc + "]";
     }
 
+    /**
+     * Сравнение документов по автору и рег. номеру
+     */
     public int compareTo(Document anotherDocument) {
         if (this.numOfDoc == anotherDocument.numOfDoc) {
             if (this.dateOfDoc.isEqual(anotherDocument.dateOfDoc)) {

@@ -1,10 +1,11 @@
-package ru.edu;
+package ru.edu.Builder;
+
+import ru.edu.Document.Document;
+import ru.edu.Document.OutgoingDocument;
 
 public class OutDocBuilder extends DocBuilder {
     public String adrOfOut;
     public String wayOfOut;
-
-    Document doc = new OutgoingDocument();
 
     public OutDocBuilder setAdrOfOut(String adrOfOut) {
         this.adrOfOut = adrOfOut;
@@ -18,6 +19,7 @@ public class OutDocBuilder extends DocBuilder {
 
     @Override
     public Document build() {
+        Document doc = new OutgoingDocument();
         doc.setIdOfDoc(idOfDoc);
         doc.setNameOfDoc(nameOfDoc);
         doc.setTextOfDoc(textOfDoc);

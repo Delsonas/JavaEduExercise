@@ -1,4 +1,7 @@
-package ru.edu;
+package ru.edu.Builder;
+
+import ru.edu.Document.Document;
+import ru.edu.Document.IncomingDocument;
 
 import java.time.LocalDate;
 
@@ -7,8 +10,6 @@ public class InDocBuilder extends DocBuilder {
     public String adrOfInc;
     public String numbOfInc;
     public LocalDate dateOfInc;
-
-    Document doc = new IncomingDocument();
 
     public InDocBuilder setSendOfInc(String sendOfInc) {
         this.sendOfInc = sendOfInc;
@@ -32,6 +33,7 @@ public class InDocBuilder extends DocBuilder {
 
     @Override
     public Document build() {
+        Document doc = new IncomingDocument();
         doc.setIdOfDoc(idOfDoc);
         doc.setNameOfDoc(nameOfDoc);
         doc.setTextOfDoc(textOfDoc);
